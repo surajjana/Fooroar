@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/landing_page_bg" >
+    
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        >
+        <ImageView 
+            android:id="@+id/fooroar_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fooroar"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:text="@string/fooroar"
+            />
+     </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+
+    <LinearLayout
+        android:id="@+id/social_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#99151515"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It will take less than 5 seconds"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+        
+
+	            <LinearLayout
+	            android:id="@+id/main"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:orientation="horizontal" >
+	
+	            <Button
+	                android:id="@+id/btnLogin"
+	                android:background="@drawable/fb_button"
+	                android:layout_width="120dp"
+	                android:layout_height="45dp"
+	                android:layout_marginLeft="10dp"
+	                android:layout_weight="1" />
+	
+	            <Button
+	                android:id="@+id/btnReg"
+	                android:background="@drawable/gplus_button"
+	                android:layout_width="120dp"
+	                android:layout_height="45dp"
+	                android:layout_weight="1"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp" />
+	        </LinearLayout>
+	        
+	            <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="We will never post anything without your permission."
+		            android:layout_marginTop="5dp"
+		            android:textColor="#ffffff"
+		            android:textSize="10sp" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="2dp"
+        >
+	            <Button
+	                android:id="@+id/signup_btn" 
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:textSize="15sp"
+	                android:textColor="#ffffff"
+	                android:gravity="center_horizontal"
+	                android:paddingTop="10dp"
+	                android:paddingBottom="10dp"
+	                android:background="#99151515"
+	                android:layout_marginRight="2dp"
+	                android:text="Signup"
+	                />
+        		<Button 
+        		    android:id="@+id/login_btn"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:textSize="15sp"
+	                android:textColor="#ffffff"
+	                android:gravity="center_horizontal"
+	                android:paddingTop="10dp"
+	                android:paddingBottom="10dp"
+	                android:background="#99151515"
+	                android:text="Login"
+	                />
+    </LinearLayout>
+    
+    </LinearLayout>
+    
+    
+
+</RelativeLayout>
