@@ -32,6 +32,7 @@ public class LandingPage extends Activity{
 				// TODO Auto-generated method stub
 				Intent i = new Intent(getBaseContext(), Login.class);
 				startActivity(i);
+				finish();
 			}
 		});
 		
@@ -42,6 +43,7 @@ public class LandingPage extends Activity{
 				// TODO Auto-generated method stub
 				Intent i = new Intent(getBaseContext(), Signup.class);
 				startActivity(i);
+				finish();
 			}
 		});
 		
@@ -52,6 +54,8 @@ public class LandingPage extends Activity{
 		login = (Button)findViewById(R.id.login_btn);
 		signup = (Button)findViewById(R.id.signup_btn);
 	}
+	
+	
 
 	
 	
